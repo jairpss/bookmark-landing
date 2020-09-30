@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,YAAY,CAAC;EAAE,SAAS,EAAE,IAAI;EAAE,UAAU,EAAE,MAAM;CAAI;;AACtD,AAAA,YAAY,CAAC,CAAC,CAAC;EAAE,KAAK,EAAE,OAAkB;CAAI;;AAE9C,AAAA,IAAI,CAAC;EACD,UAAU,ECGN,OAAO;EDFX,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,IAAI;EACf,KAAK,ECDM,OAAkB;CDEhC",
+    "sources": [
+        "style.scss",
+        "variables.scss",
+        "hero.scss",
+        "variables.scss",
+        "header.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

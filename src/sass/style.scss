@@ -1,0 +1,13 @@
+@import "./variables.scss";
+@import "./hero.scss";
+@import "./header.scss";
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background: $white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: $veryDarkBlue;
+}
