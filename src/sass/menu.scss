@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: $menuDark;
+    height: 100vh;
+    transform: translateY(-50px);
+    transition: .3s transform;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        border-top: .6px solid $grayishBlue;
+        &:last-child{
+            a{
+                border: 2px solid $white;
+                border-radius: 4px;
+                margin-top: 1em;
+                padding: .6em;
+            }
+        }
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 1em;
+        letter-spacing: 2px;
+    }
+}
+
+.menu__checkbox{
+    display: none;
+    &:checked{
+        & ~ .header{
+            background: $menuDark;
+            transform: translateY(0);
+            .menu__open{
+                background-image: url('../../static/images/icon-close.svg');
+            }
+            & .header__logo{
+                background-image: url('../../static/images/logo-bookmark-white.svg');
+            }
+            & .menu{
+                display: block;
+            }
+        }
+    }
+}
+
+.menu__open{
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    cursor: pointer;
+    background: url('../../static/images/icon-hamburger.svg') no-repeat center;
+}

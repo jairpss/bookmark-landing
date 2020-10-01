@@ -6,6 +6,10 @@
   top: 100%;
   background: rgba(47, 53, 79, 0.9);
   height: 100vh;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
 }
 
 .menu ul {
@@ -40,6 +44,8 @@
 
 .menu__checkbox:checked ~ .header {
   background: rgba(47, 53, 79, 0.9);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__checkbox:checked ~ .header .menu__open {
@@ -67,36 +73,4 @@
   cursor: pointer;
   background: url("../../static/images/icon-hamburger.svg") no-repeat center;
 }
-
-.header {
-  background: #fcfcfc;
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 2em 0;
-  -webkit-transition: .3s background;
-  transition: .3s background;
-}
-
-.header__logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 150px;
-  height: 40px;
-  background: url(../../static/images/logo-bookmark.svg) no-repeat center;
-  background-size: contain;
-}
-
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=menu.css.map */

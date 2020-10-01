@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./hero.scss";
 @import "./header.scss";
+@import "./menu.scss";
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -10,4 +11,11 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     color: $veryDarkBlue;
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 1em;
 }
