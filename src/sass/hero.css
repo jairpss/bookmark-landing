@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=hero.css.map */
+.hero {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.hero__image {
+  max-width: 100%;
+}
+
+.hero__buttons {
+  padding-top: 1em;
+}
+/*# sourceMappingURL=hero.css.map */

@@ -19,3 +19,36 @@ body {
     margin: auto;
     padding: 0 1em;
 }
+
+.u__h1{
+    font-size: 2em;
+    font-weight: 500;
+}
+.u__p{
+    color: $grayishBlue;
+    line-height: 1.8;
+}
+.u__button{
+    background: $softBlue;
+    color: $white;
+    padding: 1em 1em;
+    font-size: .8em;
+    border-radius: .5em;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    margin-left: .5em;
+    box-shadow: 0 5px 10px -5px $shadowBtn;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:first-of-type{
+        margin: 0;
+    }
+    &:hover{
+        box-shadow: 0 5px 15px -5px $shadowBtn;
+    }
+    &.is__gray{
+        color: $menuDark;
+        background: $buttonGray;
+    }
+}

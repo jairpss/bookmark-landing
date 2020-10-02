@@ -1,15 +1,18 @@
 @import "./variables.scss";
 
 .menu{
-    display: none;
+    //display: none;
+    visibility: hidden;
     position: absolute;
+    opacity: 0;
     left: 0;
     right: 0;
     top: 100%;
     background: $menuDark;
     height: 100vh;
     transform: translateY(-50px);
-    transition: .3s transform;
+    transition: .3s transform, .3s opacity;
+    will-change: transform;
     ul{
         padding: 0;
         list-style: none;
@@ -22,6 +25,11 @@
                 border-radius: 4px;
                 margin-top: 1em;
                 padding: .6em;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background: $white;
+                    color: $menuDark;
+                }
             }
         }
     }
@@ -33,6 +41,9 @@
         text-align: center;
         padding: 1em;
         letter-spacing: 2px;
+        &:hover{
+            font-weight: 500;
+        }
     }
 }
 
@@ -41,7 +52,6 @@
     &:checked{
         & ~ .header{
             background: $menuDark;
-            transform: translateY(0);
             .menu__open{
                 background-image: url('../../static/images/icon-close.svg');
             }
@@ -49,7 +59,10 @@
                 background-image: url('../../static/images/logo-bookmark-white.svg');
             }
             & .menu{
-                display: block;
+                //display: block;
+                transform: translateY(0);
+                visibility: visible;
+                opacity: 1;
             }
         }
     }
