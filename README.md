@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-Live rpoject here 👉 https://jairpss.github.io/bookmark-landing/
+Live project here 👉 https://jairpss.github.io/bookmark-landing/
 
 ![Design preview for the Bookmark landing page coding challenge](./static/design/desktop-preview.jpg)
 
@@ -27,4 +27,5 @@ For this challenge you'll need to:
 - Create the rounded blue background shape with code
 - Change the `fill` and `stroke` color of the SVGs at specific points (the challenge can be completed using the single `logo-bookmark.svg` file provided)
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
+
