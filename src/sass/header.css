@@ -6,6 +6,10 @@
   top: 100%;
   background: rgba(47, 53, 79, 0.9);
   height: 100vh;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
 }
 
 .menu ul {
@@ -40,6 +44,8 @@
 
 .menu__checkbox:checked ~ .header {
   background: rgba(47, 53, 79, 0.9);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__checkbox:checked ~ .header .menu__open {

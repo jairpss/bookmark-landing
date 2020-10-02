@@ -6,6 +6,10 @@
   top: 100%;
   background: rgba(47, 53, 79, 0.9);
   height: 100vh;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
 }
 
 .menu ul {
@@ -40,6 +44,8 @@
 
 .menu__checkbox:checked ~ .header {
   background: rgba(47, 53, 79, 0.9);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__checkbox:checked ~ .header .menu__open {
@@ -74,6 +80,18 @@
   left: 0;
   right: 0;
   padding: 2em 0;
+  -webkit-transition: .3s background;
+  transition: .3s background;
+}
+
+.header__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 150px;
+  height: 40px;
+  background: url(../../static/images/logo-bookmark.svg) no-repeat center;
+  background-size: contain;
 }
 
 .header__content {
@@ -88,16 +106,6 @@
           align-items: center;
 }
 
-.header__logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 150px;
-  height: 40px;
-  background: url(../../static/images/logo-bookmark.svg) no-repeat center;
-  background-size: contain;
-}
-
 .menu {
   display: none;
   position: absolute;
@@ -106,6 +114,10 @@
   top: 100%;
   background: rgba(47, 53, 79, 0.9);
   height: 100vh;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
 }
 
 .menu ul {
@@ -140,6 +152,8 @@
 
 .menu__checkbox:checked ~ .header {
   background: rgba(47, 53, 79, 0.9);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__checkbox:checked ~ .header .menu__open {
