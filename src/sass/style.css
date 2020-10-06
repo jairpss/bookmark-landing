@@ -41,6 +41,8 @@
   border-radius: 4px;
   margin-top: 1em;
   padding: .6em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu li:last-child a:hover {
@@ -163,6 +165,8 @@
   border-radius: 4px;
   margin-top: 1em;
   padding: .6em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu li:last-child a:hover {
@@ -221,6 +225,19 @@
   background: url("../../static/images/icon-hamburger.svg") no-repeat center;
 }
 
+.features {
+  text-align: center;
+}
+
+.tabs {
+  border: 1px solid red;
+}
+
+.tabs__link {
+  padding: 1em 0;
+  border-bottom: 0.8px solid #9194a1;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -238,20 +255,30 @@ body {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: auto;
   padding: 0 1em;
 }
 
-.u__h1 {
+.u__h1, .u__h2 {
   font-size: 2em;
   font-weight: 500;
+}
+
+.u__h2 {
+  font-size: 1.8em;
 }
 
 .u__p {
   color: #9194a1;
   line-height: 1.8;
+  font-size: .9em;
 }
 
 .u__button {
@@ -259,7 +286,7 @@ body {
   color: #fcfcfc;
   padding: 1em 1em;
   font-size: .8em;
-  border-radius: .5em;
+  border-radius: .4em;
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
   border: none;
@@ -276,12 +303,19 @@ body {
 }
 
 .u__button:hover {
-  -webkit-box-shadow: 0 5px 15px -5px #8693da;
-          box-shadow: 0 5px 15px -5px #8693da;
+  border: 2.5px solid #5368df;
+  background: #fcfcfc;
+  color: #5368df;
 }
 
 .u__button.is__gray {
   color: rgba(47, 53, 79, 0.9);
   background: #f7f7f7;
+}
+
+.u__button.is__gray:hover {
+  border: 2.5px solid rgba(47, 53, 79, 0.9);
+  background: #fcfcfc;
+  color: rgba(47, 53, 79, 0.9);
 }
 /*# sourceMappingURL=style.css.map */

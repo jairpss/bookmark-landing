@@ -2,6 +2,7 @@
 @import "./hero.scss";
 @import "./header.scss";
 @import "./menu.scss";
+@import "./features.scss";
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -13,7 +14,10 @@ body {
     color: $veryDarkBlue;
     margin: 0;
 }
-
+ul{
+    padding: 0;
+    list-style: none;
+}
 .wrapper{
     max-width: 1280px;
     margin: auto;
@@ -24,16 +28,21 @@ body {
     font-size: 2em;
     font-weight: 500;
 }
+.u__h2{
+    @extend .u__h1;
+    font-size: 1.8em;
+}
 .u__p{
     color: $grayishBlue;
     line-height: 1.8;
+    font-size: .9em;
 }
 .u__button{
     background: $softBlue;
     color: $white;
     padding: 1em 1em;
     font-size: .8em;
-    border-radius: .5em;
+    border-radius: .4em;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     border: none;
@@ -45,10 +54,17 @@ body {
         margin: 0;
     }
     &:hover{
-        box-shadow: 0 5px 15px -5px $shadowBtn;
+        border: 2.5px solid $softBlue;
+        background: $white;
+        color: $softBlue;
     }
     &.is__gray{
         color: $menuDark;
         background: $buttonGray;
+        &:hover{
+            border: 2.5px solid $menuDark;
+            background: $white;
+            color: $menuDark;
+        }
     }
 }

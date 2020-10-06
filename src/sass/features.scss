@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+.features{
+    text-align: center;
+}
+
+.tabs{
+    border: 1px solid red;
+    &__link{
+        padding: 1em 0;
+        border-bottom: .8px solid $grayishBlue;
+    }
+}
