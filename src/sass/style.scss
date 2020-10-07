@@ -16,6 +16,7 @@ body {
 }
 ul{
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 .wrapper{
@@ -30,7 +31,7 @@ ul{
 }
 .u__h2{
     @extend .u__h1;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 .u__p{
     color: $grayishBlue;

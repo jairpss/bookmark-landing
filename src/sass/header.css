@@ -96,6 +96,7 @@
   left: 0;
   right: 0;
   padding: 1em 0;
+  z-index: 99;
   -webkit-transition: .3s background;
   transition: .3s background;
 }
