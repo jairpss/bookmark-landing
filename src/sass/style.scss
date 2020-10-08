@@ -3,6 +3,7 @@
 @import "./header.scss";
 @import "./menu.scss";
 @import "./features.scss";
+@import "./download.scss";
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -67,5 +68,8 @@ ul{
             background: $white;
             color: $menuDark;
         }
+    }
+    &.is-fullWidth{
+        width: 100%;
     }
 }

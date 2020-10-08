@@ -109,6 +109,7 @@
   left: 0;
   right: 0;
   padding: 1em 0;
+  z-index: 99;
   -webkit-transition: .3s background;
   transition: .3s background;
 }
@@ -301,6 +302,42 @@
   display: block;
 }
 
+.download {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.download .wrapper > .u__p {
+  margin-bottom: 3em;
+}
+
+.download-grid {
+  margin-top: 3em;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2em;
+  margin: 0 1em;
+}
+
+.download-item {
+  -webkit-box-shadow: 0 10px 12px -5px #d8dadf;
+          box-shadow: 0 10px 12px -5px #d8dadf;
+  border-radius: 1em;
+  padding: 1.4em;
+  padding-top: 2.5em;
+  background: url("../../static/images/bg-dots.svg") repeat-x center bottom 100px;
+}
+
+.download-item .u__p {
+  margin-bottom: 3em;
+  margin-top: .5rem;
+}
+
+.download-item .u__h3 {
+  margin-bottom: .5rem;
+  margin-top: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -381,5 +418,9 @@ ul {
   border: 2.5px solid rgba(47, 53, 79, 0.9);
   background: #fcfcfc;
   color: rgba(47, 53, 79, 0.9);
+}
+
+.u__button.is-fullWidth {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

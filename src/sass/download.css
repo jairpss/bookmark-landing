@@ -1,0 +1,36 @@
+.download {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.download .wrapper > .u__p {
+  margin-bottom: 3em;
+}
+
+.download-grid {
+  margin-top: 3em;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2em;
+  margin: 0 1em;
+}
+
+.download-item {
+  -webkit-box-shadow: 0 10px 12px -5px #d8dadf;
+          box-shadow: 0 10px 12px -5px #d8dadf;
+  border-radius: 1em;
+  padding: 1.4em;
+  padding-top: 2.5em;
+  background: url("../../static/images/bg-dots.svg") repeat-x center bottom 100px;
+}
+
+.download-item .u__p {
+  margin-bottom: 3em;
+  margin-top: .5rem;
+}
+
+.download-item .u__h3 {
+  margin-bottom: .5rem;
+  margin-top: 1.5rem;
+}
+/*# sourceMappingURL=download.css.map */
