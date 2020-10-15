@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.join{
+    background: $softBlue;
+    color: $white;
+    padding: 3em 0;
+    text-align: center;
+    small{
+        text-size-adjust: .8em;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: $softGray;
+    }
+}
+
+.form{
+    .u__button{
+        margin: 0;
+    }
+    &__input{
+        width: 100%;
+        padding: 1.2em;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+        border-radius: .2em;
+        border: none;
+        font-size: .8em;
+        outline: 0;
+        &::-webkit-input-placeholder{
+            color: $softGray;
+        }
+    }
+}

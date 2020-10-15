@@ -342,7 +342,7 @@
 
 .faq {
   text-align: center;
-  padding: 4em 0;
+  padding: 4em .8em;
 }
 
 .question {
@@ -373,6 +373,43 @@
   float: right;
 }
 
+.join {
+  background: #5368df;
+  color: #fcfcfc;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.join small {
+  -webkit-text-size-adjust: .8em;
+     -moz-text-size-adjust: .8em;
+      -ms-text-size-adjust: .8em;
+          text-size-adjust: .8em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #d8dadf;
+}
+
+.form .u__button {
+  margin: 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1em;
+  border-radius: .2em;
+  border: none;
+  font-size: .8em;
+  outline: 0;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #d8dadf;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -380,6 +417,10 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -402,13 +443,18 @@ ul {
   padding: 0 1em;
 }
 
-.u__h1, .u__h2 {
+.u__h1, .u__h2, .u__h4 {
   font-size: 2em;
   font-weight: 500;
 }
 
 .u__h2 {
   font-size: 1.5em;
+}
+
+.u__h4 {
+  font-size: 1.3em;
+  margin-top: .5em;
 }
 
 .u__p {
@@ -453,6 +499,17 @@ ul {
   border: 2.5px solid rgba(47, 53, 79, 0.9);
   background: #fcfcfc;
   color: rgba(47, 53, 79, 0.9);
+}
+
+.u__button.is__red {
+  color: #fcfcfc;
+  background: #fa5757;
+}
+
+.u__button.is__red:hover {
+  border: 2.5px solid #da4444;
+  background: #da4444;
+  color: #fcfcfc;
 }
 
 .u__button.is-fullWidth {

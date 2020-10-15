@@ -5,9 +5,14 @@
 @import "./features.scss";
 @import "./download.scss";
 @import "./faq.scss";
+@import "./join.scss";
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
 
 body {
     background: $white;
@@ -34,6 +39,11 @@ ul{
 .u__h2{
     @extend .u__h1;
     font-size: 1.5em;
+}
+.u__h4{
+    @extend .u__h1;
+    font-size: 1.3em;  
+    margin-top: .5em;
 }
 .u__p{
     color: $grayishBlue;
@@ -68,6 +78,15 @@ ul{
             border: 2.5px solid $menuDark;
             background: $white;
             color: $menuDark;
+        }
+    }
+    &.is__red{
+        color: $white;
+        background: $softRed;
+        &:hover{
+            border: 2.5px solid $hoverRed;
+            background: $hoverRed;
+            color: $white;
         }
     }
     &.is-fullWidth{
