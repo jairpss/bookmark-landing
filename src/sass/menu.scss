@@ -27,8 +27,9 @@
                 padding: .6em;
                 transition: all 0.2s ease-in-out;
                 &:hover{
-                    background: $white;
-                    color: $menuDark;
+                    background: $softRed;
+                    color: $white;
+                    border: 2px solid $softRed;
                 }
             }
         }
@@ -42,7 +43,7 @@
         padding: 1em;
         letter-spacing: 2px;
         &:hover{
-            font-weight: 500;
+            color: $softRed;
         }
     }
 }

@@ -33,8 +33,9 @@
 }
 
 .menu li:last-child a:hover {
-  background: #fcfcfc;
-  color: rgba(47, 53, 79, 0.9);
+  background: #fa5757;
+  color: #fcfcfc;
+  border: 2px solid #fa5757;
 }
 
 .menu a {
@@ -48,7 +49,7 @@
 }
 
 .menu a:hover {
-  font-weight: 500;
+  color: #fa5757;
 }
 
 .menu__checkbox {
