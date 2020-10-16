@@ -6,9 +6,9 @@
     padding: 3em 0;
     text-align: center;
     small{
-        text-size-adjust: .8em;
+        font-size: .7em;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 5px;
         color: $softGray;
     }
 }
@@ -22,7 +22,7 @@
         padding: 1.2em;
         box-sizing: border-box;
         margin-bottom: 1em;
-        border-radius: .2em;
+        border-radius: .3em;
         border: none;
         font-size: .8em;
         outline: 0;

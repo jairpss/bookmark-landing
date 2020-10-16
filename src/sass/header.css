@@ -89,6 +89,48 @@
   background: url("../../static/images/icon-hamburger.svg") no-repeat center;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    position: initial;
+    height: auto;
+    background: initial;
+  }
+  .menu a {
+    color: #252b46;
+  }
+  .menu li {
+    border: none;
+  }
+  .menu li:last-child a {
+    border: 2.5px solid transparent;
+    border-radius: .4em;
+    margin-top: 0;
+    padding: .8em 3em;
+    background: #fa5757;
+    color: #fcfcfc;
+    margin-left: 2em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li:last-child a:hover {
+    background: #fcfcfc;
+    color: #5368df;
+    border: 2.5px solid #5368df;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__open {
+    display: none;
+  }
+}
+
 .header {
   background: #fcfcfc;
   position: -webkit-sticky;

@@ -77,3 +77,45 @@
     cursor: pointer;
     background: url('../../static/images/icon-hamburger.svg') no-repeat center;
 }
+
+@media screen and (min-width: 1024px) {
+    .menu{
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+        position: initial;
+        height: auto;
+        background: initial;
+        a{
+            color: $veryDarkBlue;
+        }
+        li{
+            border: none;
+            &:last-child{
+                a{
+                    border: 2.5px solid transparent;
+                    border-radius: .4em;
+                    margin-top: 0;
+                    padding: .8em 3em;
+                    background: $softRed;
+                    color: $white;
+                    margin-left: 2em;
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        background: $white;
+                        color: $softBlue;
+                        border: 2.5px solid $softBlue;
+                    }
+                }
+            }
+        }
+        ul{
+            display: flex;
+        }
+        &__open{
+            display: none;
+        }
+    }
+    
+
+}

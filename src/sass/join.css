@@ -6,12 +6,9 @@
 }
 
 .join small {
-  -webkit-text-size-adjust: .8em;
-     -moz-text-size-adjust: .8em;
-      -ms-text-size-adjust: .8em;
-          text-size-adjust: .8em;
+  font-size: .7em;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   color: #d8dadf;
 }
 
@@ -25,7 +22,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 1em;
-  border-radius: .2em;
+  border-radius: .3em;
   border: none;
   font-size: .8em;
   outline: 0;

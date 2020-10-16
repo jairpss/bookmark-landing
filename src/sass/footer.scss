@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+.footer{
+    background: $menuDark;
+    text-align: center;
+    padding: 3em 0 1em 0;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    &__menu{
+        margin-top: 2em;
+        a{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 1em 0;
+            color: $softGray;
+            &:hover{
+                color: $softRed;
+            }
+        }
+    }
+    &__social{
+        margin-top: 2em;
+        a{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            &:hover{
+                color: $softRed;
+            }
+        }
+        .facebook{
+            background: url(../../static/images/icon-facebook.svg) no-repeat center;
+        }
+        .twitter{
+            background: url(../../static/images/icon-twitter.svg) no-repeat center;
+        }
+    }
+}
+
+.attribution { 
+    margin-top: 2em;
+    font-size: 11px; 
+    text-align: center;
+    color: $softGray;
+}
+.attribution a { 
+    color: $softRed; 
+}
