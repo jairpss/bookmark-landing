@@ -10,3 +10,27 @@
         padding-top: 1em;
     }
 }
+
+//Desktop
+@media screen and (min-width: 1024px){
+    .hero{
+        text-align: left;
+        padding: 1em 0;
+        &__grid{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 500px 1fr;
+            grid-template-areas: "content image";
+        }
+        &__imageContainer{
+            grid-area: image;
+            position: relative;
+            top: 50px;
+            text-align: center;
+        }
+        &__content{
+            grid-area: content;
+            padding: 0 30px;
+        }
+    }
+}

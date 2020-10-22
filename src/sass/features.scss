@@ -3,6 +3,10 @@
 .features{
     text-align: center;
     padding: 3em 0;
+    .wrapper > .u__p{
+        max-width: 560px;
+        margin: 0 auto;
+    }
 }
 
 .tabs{
@@ -13,9 +17,16 @@
     }
     &__content{
         display: none;
+        flex-direction: column;
         img{
             max-width: 100%;
             margin-bottom: 1.5em;
+            object-fit: contain;
+        }
+        &-text{
+            .u__p{
+                padding-bottom: 1em;
+            }
         }
     }
     &__grid{
@@ -46,7 +57,7 @@
             display: block;
         }
         & ~ .tabs__grid #tab-bookmarking{
-            display: block;
+            display: flex;
         }
     }
     input[id="searching"]:checked{
@@ -54,7 +65,7 @@
             display: block;
         }
         & ~ .tabs__grid #tab-searching{
-            display: block;
+            display: flex;
         }
     }
     input[id="sharing"]:checked{
@@ -62,7 +73,40 @@
             display: block;
         }
         & ~ .tabs__grid #tab-sharing{
-            display: block;
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .tabs{
+        border-top: none;
+        text-align: left;
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+        label{
+            padding: 2em 2em;
+            &:after{
+                width: 100%;
+                transform: translateX(0);
+            }
+            &:hover{
+                color: $softRed;
+                cursor: pointer;
+            }
+        }
+        img{
+            margin: 0 5em 0 2em;
+        }
+        &__content{
+            flex-direction: row;
+            align-items: center;
+            padding: 1em 4em;
+            &-text{
+                padding-right: 4em;
+            }
         }
     }
 }

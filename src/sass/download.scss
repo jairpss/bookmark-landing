@@ -30,3 +30,13 @@
         }
     }
 }
+
+//Desktop
+
+@media screen and (min-width: 1024px){
+    .download{
+        &-grid{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
