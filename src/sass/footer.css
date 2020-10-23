@@ -17,7 +17,7 @@
   display: block;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 1em 0;
+  padding: 1em;
   color: #d8dadf;
 }
 
@@ -56,5 +56,43 @@
 
 .attribution a {
   color: #fa5757;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 1em;
+  }
+  .footer img {
+    margin-right: 2em;
+  }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 1em;
+  }
+  .footer__social {
+    margin-top: 1em;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .footer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__main a {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

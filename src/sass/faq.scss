@@ -2,12 +2,19 @@
 
 .faq{
     text-align: center;
-    padding: 4em .8em;
+    padding: 4em .8em 8em;
+    .wrapper{
+        > .u__p{
+            max-width: 580px;
+            margin: auto; 
+        }
+    }
 }
 
 .question{
     text-align: left;
-    margin: 2em 0;
+    margin: 2em auto;
+    max-width: 580px;
     &__content{
         &[open]
         .question{
@@ -20,9 +27,9 @@
         }
     }
     &__header{
-    padding: 1.5em 0;
-    border-bottom: .5px solid $softGray;
-    font-size: .9em;
+        padding: 1.5em 0;
+        border-bottom: .5px solid $softGray;
+        font-size: .9em;
     &:focus{
         outline: 0;
     }
@@ -30,5 +37,11 @@
         color: $softBlue;
         float: right;
     }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .question{
+        border-top: .5px solid $softGray;
     }
 }

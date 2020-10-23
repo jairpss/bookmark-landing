@@ -5,6 +5,9 @@
 
 .download .wrapper > .u__p {
   margin-bottom: 3em;
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 4em;
 }
 
 .download-grid {
@@ -38,6 +41,16 @@
   .download-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    padding-bottom: 7em;
+  }
+  .download-item:nth-of-type(2) {
+    top: 4em;
+    position: relative;
+  }
+  .download-item:nth-of-type(3) {
+    top: 7em;
+    position: relative;
   }
 }
 /*# sourceMappingURL=download.css.map */

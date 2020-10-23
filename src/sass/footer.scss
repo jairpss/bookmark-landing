@@ -14,7 +14,7 @@
             display: block;
             text-transform: uppercase;
             letter-spacing: 2px;
-            padding: 1em 0;
+            padding: 1em;
             color: $softGray;
             &:hover{
                 color: $softRed;
@@ -48,4 +48,33 @@
 }
 .attribution a { 
     color: $softRed; 
+}
+
+//Desktop
+@media screen and (min-width: 1024px){
+    .footer{ 
+        padding-top: 1em;
+        img{
+            margin-right: 2em;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 1em;
+        }
+        &__social{
+            margin-top: 1em;
+        }
+        &__menu{
+            display: flex;
+            margin: 0;
+        }
+        &__main{
+            display: flex;
+            align-items: center;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
 }

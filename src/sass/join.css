@@ -1,7 +1,7 @@
 .join {
   background: #5368df;
   color: #fcfcfc;
-  padding: 3em 0;
+  padding: 5em 0 4em;
   text-align: center;
 }
 
@@ -10,6 +10,11 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #d8dadf;
+}
+
+.form {
+  max-width: 450px;
+  margin: auto;
 }
 
 .form .u__button {
@@ -30,5 +35,25 @@
 
 .form__input::-webkit-input-placeholder {
   color: #d8dadf;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__input {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 70%;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+  .join .u__h4 {
+    font-size: 1.7em;
+    max-width: 450px;
+    margin: 1em auto;
+  }
 }
 /*# sourceMappingURL=join.css.map */

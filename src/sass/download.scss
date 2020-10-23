@@ -6,6 +6,9 @@
     .wrapper{
         > .u__p{
             margin-bottom: 3em;
+            max-width: 500px;
+            margin: auto;
+            padding-bottom: 4em;
         }
     }
     &-grid{
@@ -37,6 +40,18 @@
     .download{
         &-grid{
             grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2em;
+            padding-bottom: 7em;
+        }
+        &-item{
+            &:nth-of-type(2){
+                top: 4em;
+                position: relative;
+            }
+            &:nth-of-type(3){
+                top: 7em;
+                position: relative;
+            }
         }
     }
 }
